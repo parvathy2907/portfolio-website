@@ -41,8 +41,8 @@
 @keyframes spin{to{transform:rotate(360deg)}}
 .avatar{position:relative;width:min(280px,62vw);aspect-ratio:1;max-width:100%;border-radius:50%;background:radial-gradient(circle at 30% 25%,var(--accent-2),var(--accent) 45%,#2F4156 100%);border:6px solid var(--card);box-shadow:0 40px 70px -30px rgba(47,65,86,.6);display:grid;place-items:center;overflow:hidden;animation:bob 6s ease-in-out infinite}
 @keyframes bob{50%{transform:translateY(-12px)}}
-.avatar span{font-size:clamp(4rem,12vw,5.6rem);font-weight:800;color:#F5EFEB;letter-spacing:-.04em}
-.avatar::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.25) 50%,transparent 70%);transform:translateX(-120%);animation:gloss 5s ease-in-out 1.5s infinite}
+.avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.avatar::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.16) 50%,transparent 70%);transform:translateX(-120%);animation:gloss 5s ease-in-out 1.5s infinite}
 @keyframes gloss{0%,55%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
 .orb{position:absolute;border-radius:50%;animation:bob 7s ease-in-out infinite}
 .orb.o1{width:64px;height:64px;background:var(--accent-soft);top:6%;left:8%}
@@ -50,7 +50,7 @@
 .badge{position:absolute;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);font-size:13px;font-weight:600;color:var(--ink);animation:bob 5s ease-in-out infinite}
 .badge .tile{width:32px;height:32px;border-radius:9px}
 .badge .tile svg{width:16px;height:16px}
-.badge.b1{top:14%;right:2%;animation-delay:-1s}
+.badge.b1{top:3%;right:-2%;animation-delay:-1s}
 .badge.b2{bottom:12%;left:0;animation-delay:-2.5s}
 @media (max-width:520px){.badge{display:none}}
 .scroll-hint{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:40px;font-size:13px;color:var(--muted);text-decoration:none}
