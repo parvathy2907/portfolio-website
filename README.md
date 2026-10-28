@@ -2,6 +2,8 @@
 
 Personal portfolio website of **Parvathy Krishna A**, software engineer and final-year B.Tech Computer Science and Engineering student at Amrita Vishwa Vidyapeetham (graduating 2027).
 
+**Live site:** [portfolio-website-zeta-ten-54.vercel.app](https://portfolio-website-zeta-ten-54.vercel.app/)
+
 The site presents my projects, experience, skills and certifications, with a light and dark theme and subtle animations throughout.
 
 ## Sections
@@ -31,7 +33,7 @@ The site presents my projects, experience, skills and certifications, with a lig
 | Styling | CSS3: custom properties for theming, Flexbox, CSS Grid, keyframe and scroll-driven animations, `@property`, `color-mix()` |
 | Scripting | Vanilla JavaScript (ES5+): Intersection and Mutation Observers, Clipboard API, `localStorage` |
 | Fonts | Google Fonts: Plus Jakarta Sans and JetBrains Mono |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ## Project structure
 
@@ -65,13 +67,11 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Deploy with GitHub Pages
+## Deployment
 
-1. Go to **Settings → Pages** in this repository.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select the `main` branch and the `/ (root)` folder, then save.
+The site is deployed on **Vercel** and is live at [https://portfolio-website-zeta-ten-54.vercel.app/](https://portfolio-website-zeta-ten-54.vercel.app/).
 
-The site will be published at `https://parvathy2907.github.io/portfolio-website/`.
+Vercel is connected to this repository, so every push to `main` redeploys the site automatically. No build step is needed: Vercel serves `index.html` and the static files from the repository root.
 
 ## Contact
 
