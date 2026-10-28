@@ -1,0 +1,11 @@
+/* about */
+.about-grid{display:grid;gap:40px;align-items:center}
+@media (min-width:900px){.about-grid{grid-template-columns:1fr 1fr;gap:56px}}
+.about-text p{margin:0 0 18px;font-size:1.05rem}
+.about-text p strong{color:var(--ink)}
+.focus{display:grid;gap:18px;grid-template-columns:1fr}
+@media (min-width:520px){.focus{grid-template-columns:1fr 1fr}}
+.focus .card{padding:24px;display:flex;flex-direction:column;gap:14px}
+.focus .card:hover{transform:translateY(-6px);border-color:var(--accent-2)}
+.focus h3{font-size:1.05rem;margin:0;font-weight:700}
+.focus p{margin:-6px 0 0;font-size:14px;color:var(--muted);line-height:1.55}
