@@ -2,7 +2,7 @@
 
 Personal portfolio website of **Parvathy Krishna A**, software engineer and final-year B.Tech Computer Science and Engineering student at Amrita Vishwa Vidyapeetham (graduating 2027).
 
-**Live site:** [portfolio-website-zeta-ten-54.vercel.app](https://portfolio-website-zeta-ten-54.vercel.app/)
+🌐 **[Visit the website](https://portfolio-website-zeta-ten-54.vercel.app/)**
 
 The site presents my projects, experience, skills and certifications, with a light and dark theme and subtle animations throughout.
 
@@ -69,7 +69,7 @@ Then visit `http://localhost:8000`.
 
 ## Deployment
 
-The site is deployed on **Vercel** and is live at [https://portfolio-website-zeta-ten-54.vercel.app/](https://portfolio-website-zeta-ten-54.vercel.app/).
+The site is deployed on **Vercel** and is live [here](https://portfolio-website-zeta-ten-54.vercel.app/).
 
 Vercel is connected to this repository, so every push to `main` redeploys the site automatically. No build step is needed: Vercel serves `index.html` and the static files from the repository root.
 
