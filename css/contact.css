@@ -1,0 +1,21 @@
+/* contact */
+.contact-grid{display:grid;gap:36px;align-items:start}
+@media (min-width:900px){.contact-grid{grid-template-columns:1fr 1fr;gap:56px}}
+.info{display:grid;gap:20px}
+.info-row{display:flex;align-items:center;gap:16px;min-width:0}
+.info-row .tile{width:50px;height:50px;border-radius:14px;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.info-row:hover .tile{transform:rotate(-10deg) scale(1.06)}
+.info-row small{display:block;font-size:13px;color:var(--muted)}
+.info-row a,.info-row div > span{color:var(--ink);font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+.follow{margin-top:10px;font-size:14px;color:var(--muted)}
+.follow-row{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+.follow-row a{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none;font-size:14px;font-weight:600;transition:transform .25s,border-color .25s,color .25s}
+.follow-row a:hover{transform:translateY(-3px);border-color:var(--accent);color:var(--accent)}
+.follow-row svg{width:16px;height:16px}
+.message{padding:30px}
+.message h3{margin:0 0 8px;font-size:1.25rem;font-weight:700}
+.message p{margin:0 0 22px;color:var(--muted);font-size:15px}
+.message .btn{width:100%;justify-content:center;margin-bottom:12px}
+.copied{font-size:13px;color:var(--muted);text-align:center;margin:0}
+.copied:empty{display:none}
+.message .btn:last-of-type{margin-bottom:0}
