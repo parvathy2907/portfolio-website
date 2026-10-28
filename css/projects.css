@@ -1,0 +1,42 @@
+/* projects */
+.projects{display:grid;gap:28px}
+.project{display:grid;gap:0;overflow:hidden;min-width:0}
+.project:nth-child(odd){background:linear-gradient(135deg,var(--tint-1),var(--card) 70%)}
+.project:nth-child(even){background:linear-gradient(135deg,var(--tint-2),var(--card) 70%)}
+@media (min-width:900px){.project{grid-template-columns:420px 1fr}.project:nth-child(even){grid-template-columns:1fr 420px}.project:nth-child(even) .shot{order:2}}
+.project:hover{transform:translateY(-6px);border-color:var(--accent-2);box-shadow:0 34px 60px -30px rgba(47,65,86,.45)}
+.shot{position:relative;margin:20px;border-radius:16px;background:#22303F;min-height:240px;overflow:hidden;display:grid;place-items:center;border:1px solid rgba(245,239,235,.12)}
+.shot svg{width:100%;height:100%;max-height:260px}
+.shot .label{position:absolute;top:14px;left:16px;font-family:var(--mono);font-size:11px;color:#C8D9E6;letter-spacing:.06em;text-transform:uppercase}
+.project .body{padding:28px 30px 30px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.project .top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.project h3{margin:0;font-size:1.35rem;font-weight:700;line-height:1.3}
+.project .kind{font-size:12.5px;font-weight:600;color:var(--accent);margin-bottom:4px;display:block}
+.gh{width:38px;height:38px;flex:none;border-radius:10px;display:grid;place-items:center;color:var(--ink);border:1px solid var(--line);background:var(--card);transition:transform .3s,color .3s,border-color .3s}
+.gh:hover{transform:rotate(-10deg) scale(1.08);color:var(--accent);border-color:var(--accent)}
+.gh svg{width:18px;height:18px}
+.project p{margin:0;color:var(--text)}
+.project ul{margin:0;padding-left:18px}
+.project li{margin-bottom:6px}
+.project li::marker{color:var(--accent)}
+.project .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+.project .more{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:600;font-size:14.5px;text-decoration:none}
+.project .more svg{width:15px;height:15px;transition:transform .3s}
+.project .more:hover svg{transform:translate(3px,-3px)}
+.note{font-size:13px;color:var(--muted);font-style:italic}
+
+/* svg animations inside shots */
+.flowdot{animation:flow 3.2s linear infinite}
+@keyframes flow{from{offset-distance:0%}to{offset-distance:100%}}
+.beat{transform-box:fill-box;transform-origin:center;animation:beat 1.6s ease-out infinite}
+@keyframes beat{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+.infect{animation:infect 6s ease-in-out infinite}
+@keyframes infect{0%,15%{fill:#C8D9E6}30%,70%{fill:#E6C9A8}85%,100%{fill:#A9D4E8}}
+.path-draw{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 4s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:400}50%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:-400}}
+.pop{transform-box:fill-box;transform-origin:center;animation:popin 4s ease-in-out infinite}
+@keyframes popin{0%,10%{transform:scale(.6);opacity:0}25%,80%{transform:none;opacity:1}100%{opacity:0}}
+.blinker{animation:blk 1.4s ease-in-out infinite}
+.shelf{transform-box:fill-box;transform-origin:left;animation:shelf 6s ease-in-out infinite}
+@keyframes shelf{0%{transform:scaleX(1);fill:#E6C9A8}80%{transform:scaleX(.15);fill:#C47A62}100%{transform:scaleX(1)}}
+@keyframes blk{50%{opacity:.25}}
