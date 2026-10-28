@@ -144,6 +144,78 @@
       <div class="projects">
 
         <article class="card project reveal">
+          <div class="shot"><span class="label">ATT&amp;CK → D3FEND</span>
+            <svg viewBox="0 0 400 240" aria-hidden="true">
+              <path id="p1" d="M40 120 C100 40 150 40 200 120 S300 200 360 120" fill="none" stroke="#40576E" stroke-width="2" stroke-dasharray="4 6"/>
+              <g font-family="JetBrains Mono, monospace" font-size="10" fill="#F5EFEB" text-anchor="middle">
+                <circle cx="40" cy="120" r="20" fill="#2F4156" stroke="#8FB3C6"/><text x="40" y="124">SBX</text>
+                <circle cx="130" cy="62" r="20" fill="#2F4156" stroke="#8FB3C6"/><text x="130" y="66">SCR</text>
+                <circle cx="200" cy="120" r="24" fill="#567C8D"/><text x="200" y="124" fill="#fff">MAP</text>
+                <circle cx="275" cy="178" r="20" fill="#2F4156" stroke="#8FB3C6"/><text x="275" y="182">CCEA</text>
+                <circle cx="360" cy="120" r="22" fill="#2F4156" stroke="#E6C9A8"/><text x="360" y="124" fill="#E6C9A8">DEF</text>
+              </g>
+              <circle r="5" fill="#E6C9A8" class="flowdot" style="offset-path:path('M40 120 C100 40 150 40 200 120 S300 200 360 120')"/>
+              <circle r="4" fill="#C8D9E6" class="flowdot" style="offset-path:path('M40 120 C100 40 150 40 200 120 S300 200 360 120');animation-delay:-1.6s"/>
+              <g font-family="JetBrains Mono, monospace" font-size="9" fill="#8FB3C6"><text x="40" y="160" text-anchor="middle">3k samples</text><text x="130" y="100" text-anchor="middle">score 1–35</text><text x="360" y="160" text-anchor="middle">min severity</text></g>
+            </svg>
+          </div>
+          <div class="body">
+            <div class="top">
+              <div><span class="kind">Final-year research · In progress</span><h3>DEFENSIQ: Ransomware Defense Recommendation Engine</h3></div>
+              <a class="gh" href="https://github.com/parvathy2907/DEFENSIQ" target="_blank" rel="noopener" aria-label="DEFENSIQ source on GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+            </div>
+            <p>Runs about 3,000 ransomware samples through Cuckoo Sandbox, scores each behaviour for impact, and maps it through MITRE ATT&amp;CK to candidate D3FEND countermeasures. A Cooperative Co-Evolutionary Algorithm then searches for the defense set that leaves the least residual severity, benchmarked against a greedy baseline with Wilcoxon signed-rank tests.</p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">Cuckoo Sandbox</span><span class="chip">MITRE ATT&amp;CK</span><span class="chip">D3FEND</span><span class="chip">Evolutionary Algorithms</span></div>
+            <a class="more" href="https://defensiq.vercel.app" target="_blank" rel="noopener">Read the documentation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <div class="shot"><span class="label">Offer · counter · deal</span>
+            <svg viewBox="0 0 400 240" aria-hidden="true">
+              <path d="M110 120 L290 64" stroke="#40576E" stroke-width="1.5" stroke-dasharray="4 6"/>
+              <path d="M110 120 L290 176" stroke="#40576E" stroke-width="1.5" stroke-dasharray="4 6"/>
+              <g font-family="JetBrains Mono, monospace" text-anchor="middle">
+                <rect x="40" y="92" width="80" height="56" rx="12" fill="#567C8D"/>
+                <text x="80" y="116" font-size="10" fill="#fff">Distributor</text>
+                <text x="80" y="134" font-size="9" fill="#F5EFEB">500 units</text>
+                <rect x="280" y="40" width="96" height="48" rx="12" fill="#2F4156" stroke="#8FB3C6"/>
+                <text x="328" y="60" font-size="9.5" fill="#F5EFEB">premium_grocery</text>
+                <text x="328" y="76" font-size="9" fill="#C8D9E6">WTP ₹105</text>
+                <rect x="280" y="152" width="96" height="48" rx="12" fill="#2F4156" stroke="#8FB3C6"/>
+                <text x="328" y="172" font-size="9.5" fill="#F5EFEB">budget_mart</text>
+                <text x="328" y="188" font-size="9" fill="#C8D9E6">WTP ₹90</text>
+              </g>
+              <g class="flowdot" style="offset-path:path('M290 64 L110 120');offset-rotate:0deg;animation-duration:3s">
+                <rect x="-22" y="-10" width="44" height="20" rx="10" fill="#E6C9A8"/><text x="0" y="4" font-size="9" fill="#22303F" text-anchor="middle" font-family="JetBrains Mono, monospace">₹88</text>
+              </g>
+              <g class="flowdot" style="offset-path:path('M110 120 L290 176');offset-rotate:0deg;animation-duration:3s;animation-delay:-1.5s">
+                <rect x="-22" y="-10" width="44" height="20" rx="10" fill="#A9D4E8"/><text x="0" y="4" font-size="9" fill="#22303F" text-anchor="middle" font-family="JetBrains Mono, monospace">₹74</text>
+              </g>
+              <g font-family="JetBrains Mono, monospace" font-size="9" fill="#C8D9E6">
+                <text x="24" y="206">shelf life</text>
+                <rect x="24" y="212" width="150" height="8" rx="4" fill="#2F4156"/>
+                <rect x="24" y="212" width="150" height="8" rx="4" fill="#E6C9A8" class="shelf"/>
+                <text x="190" y="220">reserve ₹100 → ₹60</text>
+              </g>
+            </svg>
+          </div>
+          <div class="body">
+            <div class="top">
+              <div><span class="kind">Multi-agent simulation · AI</span><h3>Dynamic Price Wars: Perishable Inventory Liquidation</h3></div>
+              <a class="gh" href="https://github.com/parvathy2907/Dynamic-Price-Wars-Perishable-Inventory-Liquidation" target="_blank" rel="noopener" aria-label="Dynamic Price Wars source on GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+            </div>
+            <p>A multi-agent Python simulation where a distributor negotiates the sale of perishable stock with a premium grocer and a budget retailer, each with its own budget, storage capacity, willingness to pay and freshness requirement. As shelf life runs down, the distributor's reservation price falls, and agents trade opening offers, counteroffers, acceptances and walk-aways.</p>
+            <ul>
+              <li>Optional AI-driven negotiation through a local LLM (Ollama), with Pydantic-validated decisions and a rule-based fallback.</li>
+              <li>Every deal is checked against market constraints, and the simulation tracks revenue, units sold, failed negotiations and expired inventory.</li>
+              <li>Interactive Streamlit dashboard with Plotly charts, backed by a pytest suite covering agents, pricing, negotiation and end-to-end runs.</li>
+            </ul>
+            <div class="chips"><span class="chip">Python</span><span class="chip">Multi-Agent Systems</span><span class="chip">Ollama LLM</span><span class="chip">Pydantic</span><span class="chip">Streamlit</span><span class="chip">Plotly</span><span class="chip">pytest</span></div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
           <div class="shot"><span class="label">Donation matching</span>
             <svg viewBox="0 0 400 240" aria-hidden="true">
               <g stroke="#2F4156" stroke-width="1"><path d="M0 60H400M0 120H400M0 180H400M80 0V240M160 0V240M240 0V240M320 0V240"/></g>
